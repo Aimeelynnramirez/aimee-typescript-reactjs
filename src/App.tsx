@@ -33,14 +33,6 @@ type StateMessage = Readonly<typeof initialMessage>;
 
 class App extends Component<any, State, StateMessage> {
 
- /* Lifecyles!
- UNSAFE_componentWillMount(){
-      console.log('Almost there...');
-  }
-  componentDidMount(){
-    console.log('Finally...here!');
-  }*/
-
   readonly state: State = initialState;
   readonly stateMessage: StateMessage = initialMessage;
 
