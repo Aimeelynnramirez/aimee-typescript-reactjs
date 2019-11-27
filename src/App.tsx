@@ -14,28 +14,14 @@ let aTuple:[string, number] = ['Aimee', 28];
 //enum
 enum Codes { first =1 , second=2};
 //any
-let firstName: any = 'Aimee';*/
+let firstName: any = 'Aimee';
 
 const warning = ():void => {
   console.log('Get warning message here.');
 }
 warning();
-
-const initialState = {
-  name:'Aimee'
-}
-const initialMessage ={
-  message:'TypeScript is wicked!'
-}
-
-type State = Readonly<typeof initialState>;
-type StateMessage = Readonly<typeof initialMessage>;
-
-class App extends Component<any, State, StateMessage> {
-
-  readonly state: State = initialState;
-  readonly stateMessage: StateMessage = initialMessage;
-
+*/
+class App extends Component<any> {
   render(){
   return (
     <div className="App">
@@ -44,7 +30,9 @@ class App extends Component<any, State, StateMessage> {
         <p>  
           The value {firstValue} is of {typeof firstValue} type!
         </p>
-        <Message name={this.state.name} message={this.stateMessage.message}/>
+
+        <Message/>
+        
       </header>
     </div>
   );
