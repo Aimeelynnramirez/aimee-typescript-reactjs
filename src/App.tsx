@@ -5,22 +5,6 @@ import Message from './Message';
 
 let firstValue:string = 'Aimee';
 
-/*let firstNumber:number = 28;
-let firstBool: boolean = true;
-let firstNewBool:number[] = [2,3,28];
-let firstString: Array<string> = ['2','3','28'];
-//tuple
-let aTuple:[string, number] = ['Aimee', 28];
-//enum
-enum Codes { first =1 , second=2};
-//any
-let firstName: any = 'Aimee';
-
-const warning = ():void => {
-  console.log('Get warning message here.');
-}
-warning();
-*/
 class App extends Component<any> {
   render(){
   return (
