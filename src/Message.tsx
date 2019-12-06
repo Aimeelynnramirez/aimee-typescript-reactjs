@@ -11,7 +11,7 @@ const Message = (prop: UserMessage): any => {
     );
 }*/
 
-const example = (props: any):any => <h1>{props.name} is saying, {props.message}</h1>
+const example = (props: any):any => <p>{props.name} is saying, {props.message}</p>
 
 
 const Message = messageHoc(example);

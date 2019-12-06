@@ -26,15 +26,13 @@ let form = [];
 form.push({
     id:querySnapshot.id,
     config:querySnapshot.data()
-})
-   
+})  
       const formMatch = form.map( select => {
         let storage = select.config
         console.log(storage);
         return storage;
     })   
     console.log(formMatch);
-
     });
   */
 class RepoHoc extends Component{
@@ -59,26 +57,29 @@ cloudDataHandler = () => {
     this.setState({data:this.state.getName})
   }) 
 }
-   componentDidMount() {
+
+componentDidMount() {
     window.addEventListener('load', this.cloudDataHandler);
  }
 render(){
-    const submittedArray = [];
+    const nameArray = [];
     for ( let key in this.state.data) {
-        submittedArray.push( {
+        nameArray.push( {
             id: key,
             config: this.state.data[key]
         } );
     }
-   console.log("this is submitted: ", submittedArray);
-        const showSubmitted = submittedArray.map(submittedElement => (
-            <div key={submittedElement.id}>
-             <p> {submittedElement.id}) {submittedElement.config.name}</p>
-               </div>)
-                )
+    console.table(nameArray)
+        const showNames = nameArray.map(nameElement => (
+            <div key={nameElement.id}>
+             <p> {nameElement.id}) {nameElement.config.name}</p>
+               </div>)        
+            )           
     return(
         <div className="repo">
-        {showSubmitted}
+        <p>Example Firestore Cloud DB 
+            <br/> on show on site:</p>
+        {showNames}
         </div>
     );
  }
