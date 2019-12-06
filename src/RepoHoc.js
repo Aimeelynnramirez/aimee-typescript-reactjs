@@ -6,12 +6,7 @@ import 'firebase/auth';
 
 const firebaseConfig = {
     apiKey: process.env.apiKey,
-   // authDomain: "aimee-github.firebaseapp.com",
-   // databaseURL: "https://aimee-github.firebaseio.com",
-    projectId: "aimee-github",
-   // storageBucket: "aimee-github.appspot.com",
-   // messagingSenderId: "996249239282",
-   //appId: "1:996249239282:web:d51d596c4789c02d221a6b"
+    projectId: "aimee-github"
   };
   
 firebase.initializeApp(firebaseConfig);
