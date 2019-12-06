@@ -5,13 +5,13 @@ import 'firebase/firestore';
 import 'firebase/auth';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyCs6Mc6RAaILb6uw_RgnvWIED137gzWjIU",
-    authDomain: "aimee-github.firebaseapp.com",
-    databaseURL: "https://aimee-github.firebaseio.com",
+    apiKey: process.env.apiKey,
+   // authDomain: "aimee-github.firebaseapp.com",
+   // databaseURL: "https://aimee-github.firebaseio.com",
     projectId: "aimee-github",
-    storageBucket: "aimee-github.appspot.com",
-    messagingSenderId: "996249239282",
-    appId: "1:996249239282:web:d51d596c4789c02d221a6b"
+   // storageBucket: "aimee-github.appspot.com",
+   // messagingSenderId: "996249239282",
+   //appId: "1:996249239282:web:d51d596c4789c02d221a6b"
   };
   
 firebase.initializeApp(firebaseConfig);
