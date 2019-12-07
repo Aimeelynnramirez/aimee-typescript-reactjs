@@ -10,26 +10,9 @@ const firebaseConfig = {
   };
   
 firebase.initializeApp(firebaseConfig);
-//const settings = {timestampsInSnapshots:true}
-//database.settings(settings);
+
 const database = firebase.firestore();
 
- /* Query Data 
- database.doc('repositories/xUfbPvfJ8rg3CiYi4gOe').get()
- .then(querySnapshot =>{
-let form = [];
-form.push({
-    id:querySnapshot.id,
-    config:querySnapshot.data()
-})  
-      const formMatch = form.map( select => {
-        let storage = select.config
-        console.log(storage);
-        return storage;
-    })   
-    console.log(formMatch);
-    });
-  */
 class RepoHoc extends Component{
     state = {
         getName:[]
@@ -60,7 +43,7 @@ render(){
     const nameArray = [];
     for ( let key in this.state.data) {
         nameArray.push( {
-            id: key,
+            id: parseInt(key) + 1,
             config: this.state.data[key]
         } );
     }
@@ -73,7 +56,7 @@ render(){
     return(
         <div className="repo">
         <p>Example Firestore Cloud DB 
-            <br/> on show on site:</p>
+            <br/> on show on site without auth:</p>
         {showNames}
         </div>
     );
