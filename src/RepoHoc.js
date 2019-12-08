@@ -33,12 +33,9 @@ const defaultState = {
    }) 
    
 const reducer = (state = defaultState, action = {}) =>{
-  
   switch(action.type){
     case 'DATA_GET':
       return {...state, getName:state.getName};
-      case 'DATA_HIDE':
-        return {...state,  getName:state.getName}
       default:
        return state;
   }
@@ -46,13 +43,9 @@ const reducer = (state = defaultState, action = {}) =>{
 const StoreContext = createContext(null);
 
 export function StoreProvider({children}){
-  const [state, dispatch]=useReducer(reducer, defaultState);
+  const [state, dispatch]= useReducer(reducer, defaultState);
   const value = {state, dispatch};
   
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>
 }
 export const useStore = () => useContext(StoreContext);
-
-/*}
-
-export default RepoHoc;*/
