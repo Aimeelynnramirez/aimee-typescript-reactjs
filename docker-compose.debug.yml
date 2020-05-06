@@ -1,0 +1,14 @@
+version: '3.4'
+services:
+  aimee-typescript-reactjs:
+    image: aimee-typescript-reactjs
+    build: .
+    environment:
+      NODE_ENV: development
+    ports:
+      - 3000
+      - 9229:9229
+    ## set your startup file here
+    command: npm run start
+
+   

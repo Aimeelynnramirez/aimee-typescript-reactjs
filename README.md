@@ -1,10 +1,22 @@
 ## TypeScript and ReactJs with Firebase/Firestore to be included
+Run:
+<br/>
 
-### `npm install`
+##  docker run --name aimee-typescript-reactjs -p 3000:3000 aimee-typescript-reactjs
 
-Installs the package.json dependencies.
+<br/>
+if already running:
+<br/>
 
-### `npm run start`
+# docker rm <container>
+<br/>
+or 
+<br/>
+
+# docker images
+# docker rmi <image>
+
+<br/>
 
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
