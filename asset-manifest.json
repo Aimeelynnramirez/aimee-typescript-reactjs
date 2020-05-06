@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/aimee-typescript-reactjs/static/css/main.6dfb5941.chunk.css",
+    "main.js": "/aimee-typescript-reactjs/static/js/main.1d927a76.chunk.js",
+    "main.js.map": "/aimee-typescript-reactjs/static/js/main.1d927a76.chunk.js.map",
+    "runtime-main.js": "/aimee-typescript-reactjs/static/js/runtime-main.e422ac81.js",
+    "runtime-main.js.map": "/aimee-typescript-reactjs/static/js/runtime-main.e422ac81.js.map",
+    "static/js/2.20cf19c5.chunk.js": "/aimee-typescript-reactjs/static/js/2.20cf19c5.chunk.js",
+    "static/js/2.20cf19c5.chunk.js.map": "/aimee-typescript-reactjs/static/js/2.20cf19c5.chunk.js.map",
+    "index.html": "/aimee-typescript-reactjs/index.html",
+    "precache-manifest.ee32e3772a96fafc295cfbb7ba674a3d.js": "/aimee-typescript-reactjs/precache-manifest.ee32e3772a96fafc295cfbb7ba674a3d.js",
+    "service-worker.js": "/aimee-typescript-reactjs/service-worker.js",
+    "static/css/main.6dfb5941.chunk.css.map": "/aimee-typescript-reactjs/static/css/main.6dfb5941.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e422ac81.js",
+    "static/js/2.20cf19c5.chunk.js",
+    "static/css/main.6dfb5941.chunk.css",
+    "static/js/main.1d927a76.chunk.js"
+  ]
+}
