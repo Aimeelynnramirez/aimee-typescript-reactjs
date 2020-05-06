@@ -3,7 +3,6 @@ kind: Deployment
 metadata:
   annotations:
     kompose.cmd: kompose convert
-    kompose.service.type: LoadBalancer
     kompose.version: 1.21.0 ()
   creationTimestamp: null
   labels:
@@ -19,7 +18,6 @@ spec:
     metadata:
       annotations:
         kompose.cmd: kompose convert
-        kompose.service.type: LoadBalancer
         kompose.version: 1.21.0 ()
       creationTimestamp: null
       labels:
@@ -27,9 +25,9 @@ spec:
     spec:
       containers:
       - env:
-        - name: GET_HOSTS_FROM
-          value: dns
-        image: aimeelynnramirez3/aimee-typescript-reactjs
+        - name: NODE_ENV
+          value: production
+          image: aimeelynnramirez3/aimee-typescript-reactjs
         imagePullPolicy: Always
         name: aimee-typescript-reactjs
         ports:
