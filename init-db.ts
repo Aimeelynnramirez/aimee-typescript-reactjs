@@ -12,7 +12,6 @@ const firebaseConfig = {
   messagingSenderId: "996249239282",
   appId: "1:996249239282:web:d51d596c4789c02d221a6b"
 };
-
 console.log("Uploading data to the database with the following config:\n");
 
 console.log(JSON.stringify(firebaseConfig));
@@ -31,7 +30,7 @@ async function uploadData() {
 
 
   Object.values(REPOSITORIES)
-    .sort((c1:any, c2:any) => c1.seqNo - c2.seqNo)
+   .sort((c1:any, c2:any) => c1.seqNo - c2.seqNo)
     .forEach(async (repository:any) => {
 
       const newRepository = removeId(repository);

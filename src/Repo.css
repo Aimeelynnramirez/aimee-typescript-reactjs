@@ -1,12 +1,11 @@
-.centerButton {
-        padding-inline-start: 25%;
+.repo.centerButton {
+        display: inline;
 }
 button {
-    margin: 10%;
-    z-index:0;
+    margin: 2%;
     display: flex;
     flex-direction: column;
-    font-size: calc(8px + 2vmin);
+    font-size: calc(2px + 2vmin);
     border: 0;
     outline: 0;
     padding:  2px 14px;
@@ -17,7 +16,7 @@ button {
     background-color: #0a7c99;
     text-decoration: none;
     transition: all 150ms ease;
-    margin-top: 10px;
+
     
   }
 
